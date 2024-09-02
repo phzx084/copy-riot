@@ -1,0 +1,97 @@
+body {
+    font-family: 'FF Mark W05', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/e7a3_ISO_Xbox_Desktop\ Horiz\ 1920x1080\ \(No\ copy\ No\ Logo\).png) ;
+    background-size: 100%;
+}
+
+.h1 {
+    font-size: 25px;
+}
+
+.main-login {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 24px;
+    align-items: center; 
+    text-align: center; 
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    background-color: #eaeaea;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+input[type="checkbox"]:checked {
+    background-color: #d53235; 
+    border-color: transparent;
+}
+
+/*checkmark quando o checkbox está marcado */
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Estilizando o campo de entrada */
+input[type="text"], input[type="password"] {
+    background-color: #f0f0f0;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 10px;
+    color: #333;
+    min-width: 255px;
+    box-sizing: border-box;
+    font-size: 14px;   
+    margin-bottom: 15px; /* Espaçamento entre os inputs */
+}
+
+/* Estilizando o campo de entrada em foco */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #000; /* Cor da borda quando o campo está em foco */
+    outline: none; 
+}
+/* Estilizando o placeholder */
+input::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+/* Alinhando o checkbox e o texto da label */
+.form-floating {
+    display: flex;
+    align-items: center;
+    gap: 10;
+    justify-content: flex-start; /* Alinhamento à esquerda */
+    width: 100%; /* Garante que o container da checkbox e do label ocupe toda a largura */
+    margin-bottom: 15px;
+}
+
+.form-floating label {
+    cursor: pointer; 
+}
+
+
